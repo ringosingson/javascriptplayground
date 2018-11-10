@@ -1,2 +1,0 @@
-# javascriptplayground
-Created with CodeSandbox
