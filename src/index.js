@@ -1,8 +1,6 @@
-function tripleAdd(num1) {
-  return function(num2) {
-    return function(num3) {
-      return num1 + num2 + num3;
-    };
-  };
-}
-tripleAdd(20)(20)(30);
+//IIFE = immediately invoked function expression
+// - a function that is executed right after it is created
+
+(function doubleNumber(num) {
+  return num * 2;
+})(10);
