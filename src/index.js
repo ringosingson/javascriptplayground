@@ -1,8 +1,8 @@
-document.getElementById("app").innerHTML = `
-<h1>Hello Parcel!</h1>
-<div>
-  Look
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>
-  for more info about Parcel.
-</div>
-`;
+function tripleAdd(num1) {
+  return function(num2) {
+    return function(num3) {
+      return num1 + num2 + num3;
+    };
+  };
+}
+tripleAdd(20)(20)(30);
