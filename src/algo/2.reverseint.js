@@ -11,11 +11,25 @@
 function reverseInt(n) {
   const reversed = n
     .toString()
-    .split('')
+    .split("")
     .reverse()
-    .join('');
+    .join("");
 
   return parseInt(reversed) * Math.sign(n);
 }
 
 module.exports = reverseInt;
+
+/*
+function reverseInt(n){
+  const reversed = n.toString().split('').reverse().join('')
+  
+  
+  return parseInt(reversed)+ 12
+
+  //parseInt convert back the string to number
+  we can use parseFloat - for point and 
+  Number only for number
+  }
+  
+  reverseInt(56);*/
