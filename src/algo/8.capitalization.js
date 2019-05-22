@@ -11,7 +11,7 @@ function capitalize(str) {
   let result = str[0].toUpperCase();
 
   for (let i = 1; i < str.length; i++) {
-    if (str[i - 1] === ' ') {
+    if (str[i - 1] === " ") {
       result += str[i].toUpperCase();
     } else {
       result += str[i];
@@ -32,3 +32,10 @@ module.exports = capitalize;
 //
 //   return words.join(' ');
 // }
+
+//syntax -- str.slice(beginIndex[, endIndex])
+
+//var str1 = 'The morning is upon us.', // the length of str1 is 23.
+//str2 = str1.slice(1, 8),
+
+//console.log(str2); // OUTPUT: he morn
