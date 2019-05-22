@@ -30,6 +30,7 @@ function reverseInt(n){
   //parseInt convert back the string to number
   we can use parseFloat - for point and 
   Number only for number
+  Math.sign(n) returns 1 if n is positve and -1 if negative
   }
   
   reverseInt(56);*/
