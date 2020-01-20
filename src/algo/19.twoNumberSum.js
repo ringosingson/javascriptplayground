@@ -1,6 +1,6 @@
 //big O
 //time - O(n*2) space- O(1)
-
+/**---
 function twoNumberSum(array, targetSum) {
   for (let i = 0; i < array.length - 1; i++) {
     const firstNum = array[i];
@@ -17,7 +17,7 @@ function twoNumberSum(array, targetSum) {
 const result = twoNumberSum([3, 5, -1, 11, 6], 10);
 console.log(result);
 
-/**---------------- */
+------------- */
 
 function twoNumberSum(array, targetSum) {
   const nums = {};
