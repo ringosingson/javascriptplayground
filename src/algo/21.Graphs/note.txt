@@ -1,0 +1,72 @@
+WHAT ARE GRAPHS
+A graph data structure consists of a finite
+(and possibly mutable) set of vertices or nodes or points,
+together with a set of unordered pairs of these vertices for 
+an undirected graph or a set of ordered pairs for a directed graph.
+//in simple its a bunch of nodes and its connections
+
+USES FOR GRAPHS --
+Social Networks(friendlist and to another connections)
+Location / Mapping (starting and ending point)
+Routing Algorithms
+Visual Hierarchy
+File System Optimizations
+EVERYWHERE
+
+Recommendations
+"People also watched"(netflix)
+"You might also like..."(youtube)
+"People you might know"(facebook)
+"Frequently bought with"(ecommerce)
+
+ESSENTIAL GRAPH TERMS
+Vertex - a node
+Edge - connection between nodes
+Weighted/Unweighted - values assigned to distances between vertices
+Directed/Undirected - directions assigned to distanced between vertices.
+
+Types of Graph--
+1.undirected graph is a tree.
+//a bunch of nodes with a bunch of connections
+--we can traverse both ways. a -> b, b -> a.
+eg. facebook mutual friends,(two ways)
+
+2.directed graph.
+// not both ways
+// a -> b, a -> c, but b cant  traverse to a.
+eg. intagram followers. only one ways
+
+3.Unweighted graph.
+//above graph are Unweighted
+
+4.Weighted graph.
+//google map- shortest distance.
+km given. directed graph -> one way
+
+DIFFERENCES & BIG O -- |V| - number of vertices
+                       |E| - number of edges
+
+OPERATION	    ADJACENCY LIST	    ADJACENCY MATRIX
+Add Vertex    	O(1)             	​O(|V^2|)
+Add Edge      	O(1)	            O(1)
+Remove Vertex	  O(|V| + |E|)    	​O(|V^2|)
+Remove Edge	    O(|E|)	          O(1)
+Query          	O(|V| + |E|)    	O(1)
+Storage	        O(|V| + |E|)    	​O(|V^2|)
+
+Adjacency Matrix--
+--Takes up more space (in sparse graphs)
+--Slower to iterate over all edges
+--Faster to lookup specific edge
+
+Adjacency List--
+--Can take up less space (in sparse graphs)
+--Faster to iterate over all edges
+--Can be slower to lookup specific edge
+
+What will we use?
+An Adjacency List
+
+Why?
+Most data in the real-world tends to lend itself to sparser 
+and/or larger graphs
